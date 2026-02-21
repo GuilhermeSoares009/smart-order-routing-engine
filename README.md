@@ -16,6 +16,16 @@ docker compose up --build
 - Inclui `docker-compose.yml` e Dockerfile(s).
 - Healthcheck: http://localhost:8082/api/v1/health
 
+## API (MVP)
+
+- `GET /api/v1/health`
+- `POST /api/v1/routes`
+
+### Variaveis de ambiente
+
+- `PORT` (default: 8080)
+- `RATE_LIMIT_PER_MIN` (default: 120)
+
 ## Qualidade (pre-commit)
 Este repositorio usa pre-commit para CR + auditoria ASVS (OWASP ASVS v5.0.0) antes de cada commit.
 
